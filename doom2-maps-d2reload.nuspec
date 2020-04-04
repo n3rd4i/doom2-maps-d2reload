@@ -12,7 +12,7 @@
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>11.10.09</version>
+    <version>11.10.09.20200628</version>
     <packageSourceUrl>https://github.com/n3rd4i/doom2-maps-d2reload</packageSourceUrl>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>n3rd4i</owners>
@@ -20,10 +20,10 @@
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>doom2-maps-d2reload (Install)</title>
+    <title>Doom 2 Reloaded (Doom2 Megawad)</title>
     <authors>Andy Stewart</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://www.doomworld.com/idgames/levels/doom2/megawads/d2reload</projectUrl>
+    <projectUrl>https://doomwiki.org/wiki/Doom_2_Reloaded</projectUrl>
     <iconUrl>https://cdn.statically.io/img/upload.wikimedia.org/wikipedia/en/2/29/Doom_II_-_Hell_on_Earth_Coverart.png</iconUrl>
     <!-- <copyright>Year Software Vendor</copyright> -->
     <!-- If there is a license Url available, it is required for the community feed -->
@@ -37,12 +37,18 @@
     <summary>doom2 maps</summary>
     <description>
 
-      32 Level Megawad for use with Doom2. Hopefully a fun packed collection of mainly small to medium sized maps.
+    Doom 2 Reloaded (D2RELOAD.WAD) is a 2009 megawad designed by Andy Stewart (eschdoom). Most of the 32 levels contained are vanilla-compatible, but errors could appear at a few points while using the original executable, so it is better to play through a limit removing source port; another reason is that additional graphics are present. Almost all of the maps could be played in deathmatch or cooperative mode.
 
+    A DeHackEd patch is used to change the levels' names and par times. This WAD is widely known not only by the means of detail and texture alignment or frequent use of non-standard graphics, but also by enhancing gameplay on some of the levels, most notably on the super secret level, which contains 32 secrets that should be accessed one by one using various techniques including rocket jumping, waiting for a monster to open a locked door from behind or just by careful observation of the level's objects.
 
-</description>
+    </description>
     <!-- <releaseNotes>__REPLACE_OR_REMOVE__MarkDown_Okay</releaseNotes> -->
     <!-- =============================== -->
+
+    <dependencies>
+      <dependency id="freedoom" version="0.12.1"/>
+    </dependencies>
+    
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
